@@ -1,0 +1,4 @@
+com\universidad\mvc\service\ProductoService.class
+com\universidad\mvc\model\Producto.class
+com\universidad\mvc\controller\ProductoServlet.class
+com\universidad\mvc\model\ProductoDAO.class
