@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -42,9 +43,14 @@
                     <td>${p.id}</td>
                     <td><c:out value="${p.nombre}"/></td>
                     <td><c:out value="${p.categoria}"/></td>
-                    <td>$<fmt:formatNumber value="${p.precio}"
-                                           type="number" maxFractionDigits="2"
-                                           minFractionDigits="2"/></td>
+                    <td>
+                        <c:set var="precioFmt" value="${p.precio}" />
+                        <fmt:formatNumber value="${precioFmt}"
+                                          type="currency"
+                                          currencySymbol="$"
+                                          minFractionDigits="2"
+                                          maxFractionDigits="2"/>
+                    </td>
                     <td>${p.stock}</td>
                     <td>
                         <a href="<c:url value='/productos?accion=editar&id=${p.id}'/>">
