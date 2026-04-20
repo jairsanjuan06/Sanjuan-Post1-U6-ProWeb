@@ -1,0 +1,94 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: #333;
+}
+
+h1 { color: #065A82; margin-bottom: 1rem; }
+
+/* Mensaje de éxito */
+.alert-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px 14px;
+    border-left: 4px solid #2e7d32;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+/* Botón nuevo producto */
+.btn-nuevo {
+    display: inline-block;
+    background: #065A82;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.btn-nuevo:hover { opacity: 0.85; }
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+th  { background: #065A82; color: white; }
+.par   { background: #ffffff; }
+.impar { background: #f0f7fb; }
+
+/* Formulario */
+form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.acciones-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+button[type="submit"] {
+    background: #065A82;
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+button[type="submit"]:hover { opacity: 0.85; }
+
+a { color: #065A82; }
